@@ -2,7 +2,7 @@
 
 Syntax:
 	cprdlabel var_to_label, lookup("3_letter_CPRD_lookup") location("path_to_CPRD_lookups")
-	cprddate data1, lookup("OPR") location("D:\Data\Lookups\CPRD GOLD\TXTFILES")
+	e.g. cprdlabel data1, lookup("OPR") location("D:\Data\Lookups\CPRD GOLD\TXTFILES")
 
 */
 
