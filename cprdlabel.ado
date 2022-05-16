@@ -23,8 +23,29 @@ program define cprdlabel
 		//Define the labels
 		quietly count
 		local n = `r(N)'
+		
+		//Variable to count backticks (`)
+		local backtick = 0
+		
 		forvalues i = 1/`n' {
-
+			
+			//Check for backticks (these break the script)
+			if  strpos(v2[`i'], "`") {
+				
+				if `backtick' == 0 {
+					
+					noisily display "The backtick character (\`) causes problems with this script, therefore all instances will be replaced with an apostrophe (')..."
+				}
+				
+				local backtick = `backtick'+1
+				
+				local old_desc = v2[`i']
+				
+				replace v2 = subinstr(v2[`i'], "`", "'", .) if _n == `i'
+				
+				noisily display "`old_desc'" " changed to " v2[`i']
+			}
+			
 			label define `lookup' `=v1[`i']' "`=v2[`i']'", add
 		}
 		
