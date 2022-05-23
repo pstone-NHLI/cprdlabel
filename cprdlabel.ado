@@ -24,6 +24,13 @@ program define cprdlabel
 		quietly count
 		local n = `r(N)'
 		
+		//Check size of label list
+		if `n' > 65536 {
+			
+			display as error "Label lookup too large. Stata can only handle 65,536 labels."
+			error
+		}
+		
 		//Variable to count backticks (`)
 		local backtick = 0
 		
