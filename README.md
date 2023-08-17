@@ -1,15 +1,10 @@
 # `cprdlabel`: a Stata command to automate the labelling of categorical variables provided by CPRD
 
 ## Installation
-- Download `cprdlabel` by clicking [here](cprdlabel.ado) and then right-clicking on the raw button and selecting "Save link as...".
-<p align="center">
-	<img src="https://user-images.githubusercontent.com/72571451/204000346-d4685a89-6273-4401-ab03-2b9433a4bcc8.png" width="700"/>
-</p>
-
-- Save the ado file in Stata's ado personal location. Use the `sysdir` command within Stata to find the location of the Stata ado personal folder.
-<p align="center">
-	<img src="https://user-images.githubusercontent.com/72571451/203998790-160fd96d-b5d0-4ae5-9f8f-5aecec6d8a74.png" width="500"/>
-</p>
+`cprdlabel` can be installed by copying and pasting the following command in to Stata:
+```stata
+net install cprdlabel, from("https://raw.githubusercontent.com/pstone22/cprdlabel/main") replace
+```
 
 ## Syntax
 ```stata
