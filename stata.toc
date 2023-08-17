@@ -5,5 +5,4 @@ d Philip Stone
 d
 d https://github.com/pstone22/cprdlabel
 d
-f cprdlabel.ado
-f cprdlabel.sthlp
+p cprdlabel
