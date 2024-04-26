@@ -1,4 +1,4 @@
-v 1.0
+v 1.1
 d 'CPRDLABEL': a Stata command to automate the labelling of categorical variables provided by CPRD.
 d
 d Available from: https://github.com/pstone22/cprdlabel
