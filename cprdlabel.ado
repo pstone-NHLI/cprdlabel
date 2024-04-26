@@ -53,7 +53,7 @@ program define cprdlabel
 				noisily display "`old_desc'" " changed to " v2[`i']
 			}
 			
-			label define `lookup' `=v1[`i']' "`=v2[`i']'", add
+			label define `lookup' `=v1[`i']' `"`=v2[`i']'"', add
 		}
 		
 		//Save value labels in a temporary do-file with the -label- command
